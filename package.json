@@ -3,6 +3,10 @@
   "displayName": "noxia-syntax-highlighting",
   "description": "Syntax highlighting and editor support for the Noxia programming language",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GuiltedRose/noxia-extension.git"
+  },
   "engines": {
     "vscode": "^1.100.0"
   },
@@ -14,16 +18,21 @@
   ],
   "main": "./extension.js",
   "contributes": {
-    "languages": [{
-      "id": "noxia",
-      "aliases": ["Noxia", "noxia"],
-      "extensions": [".nx"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "noxia",
-      "scopeName": "source.noxia",
-      "path": "./syntaxes/noxia.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "noxia",
+        "aliases": ["Noxia", "noxia"],
+        "extensions": [".nx"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "noxia",
+        "scopeName": "source.noxia",
+        "path": "./syntaxes/noxia.tmLanguage.json"
+      }
+    ]
   }
 }
+
