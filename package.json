@@ -1,0 +1,29 @@
+{
+  "name": "noxia",
+  "displayName": "noxia-syntax-highlighting",
+  "description": "Syntax highlighting and editor support for the Noxia programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:noxia"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "languages": [{
+      "id": "noxia",
+      "aliases": ["Noxia", "noxia"],
+      "extensions": [".nx"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "noxia",
+      "scopeName": "source.noxia",
+      "path": "./syntaxes/noxia.tmLanguage.json"
+    }]
+  }
+}
