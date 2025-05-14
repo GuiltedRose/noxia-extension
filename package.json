@@ -1,6 +1,7 @@
 {
   "name": "noxia",
   "displayName": "noxia-syntax-highlighting",
+  "publisher": "guiltedrose",
   "description": "Syntax highlighting and editor support for the Noxia programming language",
   "version": "0.0.1",
   "repository": {
@@ -8,7 +9,7 @@
     "url": "https://github.com/GuiltedRose/noxia-extension.git"
   },
   "engines": {
-    "vscode": "^1.100.0"
+    "vscode": ">=0.80.0"
   },
   "categories": [
     "Programming Languages"
